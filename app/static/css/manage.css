@@ -1,0 +1,130 @@
+body {
+	background: #f0f2f5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.stickyheader {
+	position:fixed;
+	width: 100%;
+	z-index: 9999;
+}
+.logo-background {
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-image: url(../images/staticheader.jpg);
+	z-index: 5;
+	opacity: 0.9;
+}
+.logo {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+	color:white;
+	font-family: 'Lobster';
+	font-size: 23px;
+	padding-top:10px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.categories { 
+	position: fixed;
+	z-index: 10;
+	margin-top: 60px;
+	text-align: center;
+	padding: 9px;
+	display:inline-block;
+	background: #fcfcfd;
+	width: 100%;
+}
+.categories li {
+	display: inline-block;
+	padding: 3px 10px;
+	list-style-type: none;
+}
+.categories li.active {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+}
+.categories li a {
+	color: #a6a6a6;
+}
+.categories li.active a {
+
+	color: #737373;
+}
+.content {
+	padding-top: 100px;
+}
+
+.details a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.header {
+	margin-bottom: 20px; 
+	font-weight: 300;
+}
+
+.input-group 
+{
+	margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding-top: 10px;
+}
+
+.img-responsive {
+	height: 100px;
+	/*max-width: 100%;
+	min-width: 100px;*/
+	width:100px;
+	float: left;
+	margin-right: 15px;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+.item {
+	/*border: 2.5px solid #599bb3;
+	border-radius: 10px;*/
+	height: 115px;
+	margin: 10px 10px;
+	padding: 5px 5px;
+	/*margin-bottom: 20px;*/
+	/*background-color: #599bb3;*/
+	color: black;
+}
+
+.form-control {
+	/*border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+	border-bottom-left-radius: 10px !important;*/
+	border-radius: 5px !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+	text-align: center;
+}
+
+.name, .desc, .price, .origprice, .seller {
+	float: left;
+	font-size: 14px;
+}
+
+.nav-pills li a{
+	padding: 10px 35px;
+}
+
+#seller {
+	color: #599bb3;
+}
+
+hr {
+	background-color: #c4c4c4;
+	height: 1px;
+	margin: 0 10px;
+}

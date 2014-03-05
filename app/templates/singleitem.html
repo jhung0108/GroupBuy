@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Group buy</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/singleitem.css')}}">
+</head>
+<body>
+	<div class="stickyheader">
+		<div class="logo-background"></div>
+		<div class="logo">GroupBuy</div>
+		<ul class="categories">
+			<li><a href="/items/">Listings</a></li>
+			<!-- <li><a href="add.html">Add</a></li> -->
+			<li><a href="/profile/">My Profile</a></li>
+			<!-- <li><a href="manage.html">Manage</a></li> -->
+		</ul>
+	</div>
+
+	<div class="content">
+		<h3 class="name" id="name">{{item.name}}</h3>
+		<img class="img-responsive" id="imgsrc" src="{{item.photo}}" >
+		<div class="input-group">	
+			<p id="desc">
+				<span class="labels">Description:</span>
+				{{item.description}}
+			</p>
+			<p>
+				<span class="labels"> Sold by: </span><span id="seller">Bob</span> 
+			</p>
+			<p>
+				<span class="labels"> Original Price:</span> $<span id="origprice">{{item.origprice}}</span> 
+			</p>
+			<p>
+				<span class="labels">Bulk Price:</span> $<span id="price">{{item.price}}</span> 
+			</p>
+
+		</div>
+		  <a class="myButton" href="/item/buy/{{item.id}}">Buy!</a>
+	</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+<script src="{{url_for('static', filename='js/singleitem.js')}}"></script>
+
+</body>
+</html>

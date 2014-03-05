@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Group buy</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/add.css')}}">
+</head>
+<body>
+	<div class="stickyheader">
+		<div class="logo-background"></div>
+		<div class="logo">GroupBuy</div>
+		<ul class="categories">
+			<li><a href="/items/">Listings</a></li>
+			<!-- <li class="active"><a href="#">Add</a></li> -->
+			<li><a href="/profile/">My Profile</a></li>
+			<!-- <li><a href="manage.html">Manage</a></li> -->
+		</ul>
+	</div>
+	<div class="content">
+		<div class="input-group input-group-lg">
+			<input id="imgup" name="imgLink" type="text" class="form-control" placeholder="Image Link">
+    		<!-- <span>Select a photo</span>
+    		<input id="imgup" type="file" class="upload"/> -->
+		</div>
+		<!-- <button type="button" class="btn btn-default navbar-btn">Sign in</button> -->
+		<div class="input-group input-group-lg select">
+		  <input id="name" name="itemName" type="text" class="form-control" placeholder="Item Name">
+		</div>
+		<div class="input-group input-group-lg select">
+		  <input id="desc" name="itemDesc" type="text" class="form-control" placeholder="Short description">
+		</div>
+		<div class="input-group input-group-lg select">
+		  <input id="origprice" name="itemOrig" type="text" class="price form-control" placeholder="Original Price">
+		  <input id="price" name="itemPrice" type="text" class="price form-control" placeholder="Bulk Price">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon">
+        		<input id="check" type="checkbox">
+      		</span>
+			<input id="minnum" type="text" name="itemMin" class="form-control" placeholder="Min # of Buyers">
+      </div><!-- /btn-group -->
+		<div class="input-group input-group-lg select">
+		  <a class="myButton">Submit my listing!</a>
+		</div>
+	</div>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+		<script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+		<script src="{{url_for('static', filename='js/add.js')}}"></script>
+	</body>
+	</html>
